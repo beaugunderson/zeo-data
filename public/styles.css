@@ -1,0 +1,58 @@
+* {
+   font-family: Helvetica, Arial;
+}
+
+body {
+   padding: 4em;
+   padding-top: 1em;
+   font-size: 20px;
+}
+
+#access-token {
+   width: 200px;
+}
+
+a, a:visited {
+   color: #046d8b;
+   text-decoration: none;
+}
+
+a:hover {
+   text-decoration: underline;
+}
+
+li {
+   list-style-type: none;
+}
+
+p > a {
+   text-decoration: underline;
+}
+
+#auth > a {
+   margin-left: 1em;
+   font-size: 24px;
+}
+
+.check {
+   color: #046d8b;
+   margin-right: 4px;
+}
+
+#empowered {
+   margin-left: 14px;
+   width: 500px;
+}
+
+#auth {
+   width: 275px;
+   margin-bottom: 1em;
+}
+
+#chart svg {
+   height: 350px;
+}
+
+#footer {
+   margin-top: 1em;
+}

@@ -1,0 +1,15 @@
+{
+  "name": "zeo-data",
+  "version": "0.0.0",
+  "dependencies": {
+    "ejs": "",
+    "express": "3.x",
+    "querystring": "",
+    "request": "",
+    "sprintf": "",
+    "socket.io": "~0.9.14",
+    "consolidate": "~0.9.0",
+    "swig": "~0.13.5",
+    "archiver": "~0.4.3"
+  }
+}

@@ -1,0 +1,11 @@
+{% extends 'layout.html' %}
+
+{% block title %}Home{% endblock %}
+
+{% block body %}
+ {% if !authenticated %}
+ <a href="/auth/zeo">Sign in with Zeo</a>
+ {% else %}
+ You're signed in, please <a href="/archive/zeo">download your archive</a>.
+ {% endif %}
+{% endblock %}

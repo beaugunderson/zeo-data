@@ -1,0 +1,33 @@
+{% extends 'layout.html' %}
+
+{% block title %}Archive{% endblock %}
+
+{% block head %}
+<script src="/socket.io/socket.io.js"></script>
+
+<script>
+var socket = io.connect('http://beaugunderson.com:14000');
+
+socket.emit('userId', '{{ userId }}');
+
+socket.on('reconnect', function () {
+  console.log('Reconnected to the server');
+  socket.emit('userId', '{{ userId }}');
+});
+
+socket.on('reconnecting', function () {
+  console.log('Attempting to re-connect to the server');
+});
+
+socket.on('status', function (message) {
+  $('#output').append('<p>' + message + '</p>');
+});
+</script>
+{% endblock %}
+
+{% block body %}
+We're generating your archive. This may take a few minutes. Your archive URL
+will show up below when it's ready.
+
+<div id="output"></div>
+{% endblock %}

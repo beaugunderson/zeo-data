@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+ <head>
+  <title>{% block title %}Unnamed page{% endblock %} - Zeo Export</title>
+
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+
+  <script>
+   var userId = '{{ userId }}';
+  </script>
+
+  <link rel="stylesheet" href="/css/zeo-data.css" />
+
+  {% block head %}{% endblock %}
+ </head>
+
+ <body>
+  {% block body %}{% endblock %}
+
+  <!--
+  <footer>
+   By <a href="http://www.beaugunderson.com/">Beau Gunderson</a>
+  </footer>
+  -->
+ </body>
+</html>
